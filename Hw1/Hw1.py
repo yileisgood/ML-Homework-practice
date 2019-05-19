@@ -19,6 +19,7 @@ for day in range(12 * 20):
 # the shape for X should be 5652, 18*9 (include PM value of previous 9 hour)
 # shape for y should be 5652, 1
 num_feature = 18
+
 X_train = np.empty(shape=(switch_time.shape[1] - 9 * 12, num_feature * 9), dtype=float)
 y_train = np.empty(shape=(switch_time.shape[1] - 9 * 12, 1))
 for month in range(12):
